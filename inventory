@@ -1,3 +1,12 @@
+import numpy as np
+import pandas as pd
+import random 
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import datetime
+import os
+
+
 """"
 This script is for creating an Environment class. Each environment represents
 a warehouse with the following methods:
@@ -7,11 +16,6 @@ a warehouse with the following methods:
     3) update: this updates the inventory stock based on RL Agent Action
     4) reset: reset all environment properties for new episode training
 """
-
-import numpy as np
-import pandas as pd
-import random 
-
 
 class env():
     
@@ -151,8 +155,7 @@ class env():
 DQN
 """
     
-    
-import tensorflow as tf
+
 
 np.random.seed(1)
 tf.set_random_seed(1)
@@ -369,7 +372,7 @@ Created on Tue Jun 18 20:54:53 2019
     3) check_if_state_exist: this check if a state exist based on env feedback
 """
 
-import numpy as np
+
 class agent():
     
     
@@ -572,11 +575,6 @@ Created on Tue Jun 18 20:55:27 2019
 
 @author: Verena
 """ 
-
-import numpy as np
-import matplotlib.pyplot as plt
-import datetime
-import os
 
 class trainer():
     
